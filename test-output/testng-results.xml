@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-13T20:56:32 IST" name="Default suite" finished-at="2023-07-13T20:56:45 IST" duration-ms="13206">
+  <suite started-at="2023-07-30T20:46:20 IST" name="Suite" finished-at="2023-07-30T20:47:08 IST" duration-ms="47902">
     <groups>
     </groups>
-    <test started-at="2023-07-13T20:56:32 IST" name="Default test" finished-at="2023-07-13T20:56:45 IST" duration-ms="13206">
+    <test started-at="2023-07-30T20:46:20 IST" name="Test" finished-at="2023-07-30T20:47:08 IST" duration-ms="47902">
       <class name="com.selenium.exclwork.ExcelEx3">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.selenium.exclwork.ExcelEx3@54d9d12d]" started-at="2023-07-13T20:56:32 IST" name="beforeSuite" finished-at="2023-07-13T20:56:32 IST" duration-ms="362" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.selenium.exclwork.ExcelEx3@17f9d882]" started-at="2023-07-30T20:46:20 IST" name="beforeSuite" finished-at="2023-07-30T20:46:20 IST" duration-ms="339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.exclwork.ExcelEx3@54d9d12d]" started-at="2023-07-13T20:56:32 IST" name="beforeMethod" finished-at="2023-07-13T20:56:34 IST" duration-ms="1332" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.exclwork.ExcelEx3@17f9d882]" started-at="2023-07-30T20:46:20 IST" name="beforeMethod" finished-at="2023-07-30T20:46:22 IST" duration-ms="1401" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ExcelEx3.TC_CWB_Login()[pri:0, instance:com.selenium.exclwork.ExcelEx3@54d9d12d] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=ExcelEx3.TC_CWB_Login()[pri:0, instance:com.selenium.exclwork.ExcelEx3@17f9d882] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_CWB_Login()[pri:0, instance:com.selenium.exclwork.ExcelEx3@54d9d12d]" started-at="2023-07-13T20:56:34 IST" name="TC_CWB_Login" finished-at="2023-07-13T20:56:45 IST" duration-ms="11800" status="PASS">
+        <test-method signature="TC_CWB_Login()[pri:0, instance:com.selenium.exclwork.ExcelEx3@17f9d882]" started-at="2023-07-30T20:46:22 IST" name="TC_CWB_Login" finished-at="2023-07-30T20:47:08 IST" duration-ms="46420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_CWB_Login -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.selenium.exclwork.ExcelEx3@54d9d12d]" started-at="2023-07-13T20:56:45 IST" name="afterSuite" finished-at="2023-07-13T20:56:46 IST" duration-ms="664" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.selenium.exclwork.ExcelEx3@17f9d882]" started-at="2023-07-30T20:47:08 IST" name="afterSuite" finished-at="2023-07-30T20:47:09 IST" duration-ms="464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.selenium.exclwork.ExcelEx3 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -115,7 +116,7 @@ public class GenericFunctionsEx1 extends Baseclass{
 	public static String getScreenshot(String filename) {
 		TakesScreenshot takescreen = (TakesScreenshot) driver;
 		File sourefile = takescreen.getScreenshotAs(OutputType.FILE);
-		String path = "E:\\Selenium\\Selenium_Project\\Screenshots\\" + filename + ".png";
+		String path = "E:\\Selenium\\Selenium_Project\\Screenshots\\" + new Date().getTime() + ".png";
 		File destfile = new File(path);
 		try {
 			FileUtils.copyFile(sourefile, destfile);

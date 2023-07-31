@@ -11,9 +11,10 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.selenium.GenericFunc.GenericFunctionsEx1;
+import com.selenium.GenericFunc.ScreenFunctions;
 import com.selenium.framework.Baseclass;
 
-public class ExcelEx3 extends GenericFunctionsEx1 {
+public class ExcelEx3 extends ScreenFunctions {
 
 	// static ExtentReports report;
 
@@ -22,8 +23,7 @@ public class ExcelEx3 extends GenericFunctionsEx1 {
 	 */
 
 	/*
-	 * @Test public void TC_CWB_LoginTest() {
-	 *  //report=new
+	 * @Test public void TC_CWB_LoginTest() { //report=new
 	 * ExtentReports("Results\\seleniumreport.html");
 	 * //test=report.startTest("TC_01");
 	 * 
@@ -38,8 +38,7 @@ public class ExcelEx3 extends GenericFunctionsEx1 {
 	 * mfavalue=sheet.getRow(1).getCell(4).getStringCellValue();
 	 * 
 	 * 
-	 * launchBrowser(map1.get("browsername")); 
-	 * launchApplication(map1.get("url"));
+	 * launchBrowser(map1.get("browsername")); launchApplication(map1.get("url"));
 	 * 
 	 * test.log(LogStatus.PASS, "URL launch is pass");
 	 * inputUsername("//input[@id='idp-discovery-username']", usernamevalue);
@@ -60,10 +59,15 @@ public class ExcelEx3 extends GenericFunctionsEx1 {
 	 */
 	@Test
 	public void TC_CWB_Login() {
-		test=report.startTest("TC_CWB_Login");
-		launchBrowser(map1.get("browsername"));
-		logStatus("Launch Browser", true);
-		launchApplication(map1.get("url"));
+		try {
+			test = report.startTest("TC_CWB_Login");
+			loginFunction();
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			logStatus(e.toString(), false);
+		}
+
 	}
 
 }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-30T21:28:10 IST" name="Suite" finished-at="2023-07-30T21:29:01 IST" duration-ms="50802">
+    <groups>
+    </groups>
+    <test started-at="2023-07-30T21:28:10 IST" name="Test" finished-at="2023-07-30T21:29:01 IST" duration-ms="50802">
+      <class name="com.selenium.exclwork.ExcelEx3">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.selenium.exclwork.ExcelEx3@d86a6f]" started-at="2023-07-30T21:28:10 IST" name="beforeSuite" finished-at="2023-07-30T21:28:10 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.exclwork.ExcelEx3@d86a6f]" started-at="2023-07-30T21:28:10 IST" name="beforeMethod" finished-at="2023-07-30T21:28:13 IST" duration-ms="2635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ExcelEx3.TC_CWB_Login()[pri:0, instance:com.selenium.exclwork.ExcelEx3@d86a6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_CWB_Login()[pri:0, instance:com.selenium.exclwork.ExcelEx3@d86a6f]" started-at="2023-07-30T21:28:13 IST" name="TC_CWB_Login" finished-at="2023-07-30T21:29:01 IST" duration-ms="48102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CWB_Login -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.selenium.exclwork.ExcelEx3@d86a6f]" started-at="2023-07-30T21:29:01 IST" name="afterSuite" finished-at="2023-07-30T21:29:02 IST" duration-ms="673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.selenium.exclwork.ExcelEx3 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
