@@ -26,17 +26,15 @@ public class HDFCWindowHandl {
 		driver.findElement(By.xpath("(//span[@class='lightbluecolor'])[5]/a")).click();
 		Set<String> windows = driver.getWindowHandles();
 		System.out.println(windows.size());
-		int i=1;
+		int i = 0;
 		for (String wind : windows) {
 			System.out.println("windows:" + wind);
-			/*if(i==2)
-			{
+			if (i == 1) {
 				driver.switchTo().window(wind);
 			}
 			i++;
-		}*/
-	    System.out.println(driver.getTitle());
+		}
+		System.out.println(driver.getTitle());
 	}
 
-	}
 }

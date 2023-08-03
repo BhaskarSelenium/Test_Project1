@@ -19,26 +19,30 @@ public class WindowHandlesex2 {
 		WebElement frame_element = driver.findElement(By.xpath("//frame[@name='login_page']"));
 		driver.switchTo().frame(frame_element);
 		driver.findElement(By.name("fldLoginUserId")).sendKeys("293857694");
-		driver.findElement(By.xpath("(//span[@class='lightbluecolor'])[5]/a")).click();
-		driver.findElement(By.xpath("(//span[@class='lightbluecolor'])[6]/a")).click();
 		driver.findElement(By.xpath("(//span[@class='lightbluecolor'])[1]/a")).click();
 		driver.findElement(By.xpath("(//span[@class='lightbluecolor'])[2]/a")).click();
 		driver.findElement(By.xpath("(//span[@class='lightbluecolor'])[3]/a")).click();
+		driver.findElement(By.xpath("(//span[@class='lightbluecolor'])[4]/a")).click();
+		driver.findElement(By.xpath("(//span[@class='lightbluecolor'])[5]/a")).click();
 		Set<String> hands = driver.getWindowHandles();
 		System.out.println(hands.size());
 		int i=0;
 		for (String winds1 : hands) {
 			System.out.println("Windows: " + winds1);
-			if(i==2)
+			if(i==3)
 			{
-				driver.switchTo().window(winds1);
+				driver.switchTo().defaultContent();
 			}
 			i++;
 		}
+		
 		System.out.println(driver.getTitle());
-		Thread.sleep(5000);
-		WebElement text10=driver.findElement(By.xpath("//div[@class='pdtb25 text-center']/a"));
-		System.out.println(text10.getText());
+		
+		/*
+		 * Thread.sleep(5000); WebElement
+		 * text10=driver.findElement(By.xpath("//div[@class='pdtb25 text-center']/a"));
+		 * System.out.println(text10.getText());
+		 */
 		
 
 	}

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.exclwork.ExcelEx3">
+      <class name="com.selenium.alertexrcs.AlertExample1">
         <methods>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
-          <include name="TC_CWB_Login"/>
           <include name="beforeSuite"/>
+          <include name="test48"/>
         </methods>
-      </class> <!-- com.selenium.exclwork.ExcelEx3 -->
+      </class> <!-- com.selenium.alertexrcs.AlertExample1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

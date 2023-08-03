@@ -6,15 +6,15 @@ public class ScreenFunctions extends GenericFunctionsEx1 {
 		launchBrowser(map1.get("browsername"));
 		logStatus("Launch Browser", true);
 		launchApplication(map1.get("url"));
-		inputUsername("//input[@id='idp-discovery-username']", map1.get("username"));
+		inputText("//input[@id='idp-discovery-username']", map1.get("username"));
 		logStatus("Input username", true);
-		usernameClick("//input[@id='idp-discovery-submit']");
-		inputpassword("//input[@id='okta-signin-password']", map1.get("password"));
+		clickFunc("//input[@id='idp-discovery-submit']");
+		inputText("//input[@id='okta-signin-password']", map1.get("password"));
 		logStatus("Input password", true);
-		PasswordClick("//input[@id='okta-signin-submit']");
-		inputMFA("//input[@name='answer']", map1.get("mfa"));
+		clickFunc("//input[@id='okta-signin-submit']");
+		inputText("//input[@name='answer']", map1.get("mfa"));
 		logStatus("Input MFA", true);
-		mfaVerify("//input[@type='submit']");
+		clickFunc("//input[@type='submit']");
 
 	}
 

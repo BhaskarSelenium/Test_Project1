@@ -62,14 +62,15 @@ public class GenericFunctionsEx1 extends Baseclass{
 		System.out.println("Entered the ur1: " + URL);
 	}
 
-	public static void inputUsername(String Xpath, String username) {
+	public static void inputText(String Xpath, String username) throws InterruptedException {
 		WebElement ele1 = driver.findElement(By.xpath(Xpath));
 		ele1.click();
 		ele1.clear();
 		ele1.sendKeys(username);
+		Thread.sleep(5000);
 	}
 
-	public static void usernameClick(String Xpath) throws Exception {
+	public static void clickFunc(String Xpath) throws Exception {
 		WebElement next1 = driver.findElement(By.xpath(Xpath));
 		Thread.sleep(5000);
 		next1.click();
@@ -80,33 +81,33 @@ public class GenericFunctionsEx1 extends Baseclass{
 		Thread.sleep(5000);
 		check.click();
 	}
+	
+	/*
+	 * public static void dropHandle(String payeename) {
+	 * 
+	 * }
+	 */
+	/*
+	 * public static void inputpassword(String Xpath, String password) { WebElement
+	 * pw = driver.findElement(By.xpath(Xpath)); pw.click(); pw.clear();
+	 * pw.sendKeys(password); }
+	 */
 
-	public static void inputpassword(String Xpath, String password) {
-		WebElement pw = driver.findElement(By.xpath(Xpath));
-		pw.click();
-		pw.clear();
-		pw.sendKeys(password);
-	}
-
-	public static void PasswordClick(String Xpath) throws Exception {
-		WebElement Login1 = driver.findElement(By.xpath(Xpath));
-		Thread.sleep(5000);
-		Login1.click();
-	}
-
-	public static void inputMFA(String Xpath, String mfa) {
-		WebElement pw = driver.findElement(By.xpath(Xpath));
-		pw.click();
-		pw.clear();
-		pw.sendKeys(mfa);
-	}
-
-	public static void mfaVerify(String Xpath) throws Exception {
-		WebElement verify = driver.findElement(By.xpath(Xpath));
-		Thread.sleep(5000);
-		verify.click();
-	}
-
+	/*
+	 * public static void PasswordClick(String Xpath) throws Exception { WebElement
+	 * Login1 = driver.findElement(By.xpath(Xpath)); Thread.sleep(5000);
+	 * Login1.click(); }
+	 */
+	/*
+	 * public static void inputMFA(String Xpath, String mfa) { WebElement pw =
+	 * driver.findElement(By.xpath(Xpath)); pw.click(); pw.clear();
+	 * pw.sendKeys(mfa); }
+	 */
+	/*
+	 * public static void mfaVerify(String Xpath) throws Exception { WebElement
+	 * verify = driver.findElement(By.xpath(Xpath)); Thread.sleep(5000);
+	 * verify.click(); }
+	 */
 	public static void exReport1(String name1) {
 		ExtentReports report = new ExtentReports("Results\\SeleniumReport.html");
 		ExtentTest test = report.startTest(null);
