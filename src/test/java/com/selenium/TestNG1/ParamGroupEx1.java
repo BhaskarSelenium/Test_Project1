@@ -1,5 +1,8 @@
 package com.selenium.TestNG1;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -28,7 +31,14 @@ public class ParamGroupEx1 extends GenericFunctionsEx1 {
 
 	@Test
 	public void test002() {
-		System.out.println("I am Test002 Method");
+		WebDriver driver =new EdgeDriver();
+		driver.get("https://www.guru99.com/all-about-testng-and-selenium.html");
+	}
+	
+	@Test
+	public void sample29() {
+		WebDriver driver =new ChromeDriver();
+		driver.get("https://www.facebook.com/");
 	}
 
 }
